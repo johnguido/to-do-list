@@ -18,7 +18,6 @@ const logo = document.querySelector(".logo");
 logo.src = icon;
 
 const taskModal = taskModalController();
-const traskControl = taskController();
 const projectControl = projectController();
 const projectModal = projectModalController();
 const upperControl = upperContentControl();
@@ -144,11 +143,11 @@ addEventListener("click", function (e) {
 //check for click on add sign inside of projects tab (can only see if project is availale)
 addEventListener("click", function (e) {
   if (e.target.classList.contains("project-div-add")) {
-    const projectName = e.path[2].id;
+    const projectName = e.path[3].id;
     updateInputTaskProjects(projectControl.projectList);
     taskModal.activateTaskModal(projectName);
   } else if (e.target.classList.contains("project-div-trash")) {
-    const projectName = e.path[2].id;
+    const projectName = e.path[3].id;
     projectControl.removeProject(projectName);
     storageCont.clearProjectStorage();
     displayControl.displayProjects(projectControl.projectList);
