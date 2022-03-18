@@ -1,3 +1,6 @@
+import trash from "./img/trashcan.png";
+import add from "./img/add.png";
+
 function buildProject(nameOfProject) {
   const main = document.createElement("div");
   main.classList.add("project-div");
@@ -24,13 +27,21 @@ function buildProject(nameOfProject) {
 
 function createDeleteProjectButton() {
   const div = document.createElement("div");
+  const img = document.createElement("img");
+  img.classList.add("project-div-trash");
+  img.src = trash;
   div.classList.add("project-div-trash");
+  div.appendChild(img);
   return div;
 }
 
 function createAddProjectButton() {
   const div = document.createElement("div");
+  const img = document.createElement("img");
+  img.classList.add("project-div-add");
+  img.src = add;
   div.classList.add("project-div-add");
+  div.appendChild(img);
   return div;
 }
 
