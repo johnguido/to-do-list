@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo-List!</title>
+    <script type="module" defer src="bundle.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <img class="logo" height="50px" width="50px">
+      <h1 class="title">todolist</h1>
+    </div>
+    <div id="content">
+
+
+      <div class="sidebar">
+        <button class="sidebar-buttons">Tasks</button>
+        <button class="sidebar-buttons">Today</button>
+        <button class="sidebar-buttons">Projects</button>
+        <button class="sidebar-buttons">Add Project</button>
+        <button class="sidebar-buttons">Add Task</button>
+      </div>
+
+
+      <div class="main-info">
+        <div class="upper-content">
+          <p class="upper-content-text">Tasks</p>
+        </div>
+        <div class="lower-content"></div>
+      </div>
+
+      
+      <div class="bg-modal-task-inactive" id="task-add-modal">
+        <div class="modal-content-task">
+          <div class="modal-task-form" id="task-form">
+            <label class="modal-task-labelOne">Task name:</label>
+            <input type="text" class="modal-task-text-input" id="modal-input">
+            <label class="modal-task-labelTwo">Due date:</label>
+            <input type="date" class="modal-task-date-input" id="modal-input">
+            <label class="modal-task-labelTwo">Priority:</label>
+            <select name="priority" class="modal-task-priority-input">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <label class="modal-task-labelTwo">Project:</label>
+            <select name="projects" class="modal-task-projects-input">
+              <option value="Default">Default</option>
+            </select>
+            <label class="modal-task-labelTwo">Description:</label>
+            <input type="text" class="modal-task-desc-input" id="modal-input">
+            <div class="modal-task-sub-cancel-div">
+              <button class="modal-task-button-input">Submit</button>
+              <button class="modal-task-button-input">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+      <div class="bg-modal-task-editor-inactive" id="task-edit-modal">
+        <div class="modal-content-task-edit">
+          <div class="modal-task-form-edit" id="task-form">
+            <label class="modal-task-labelOne">Task name:</label>
+            <input type="text" class="modal-task-text-input-edit" id="modal-input">
+            <label class="modal-task-labelTwo">Due date:</label>
+            <input type="date" class="modal-task-date-input-edit" id="modal-input">
+            <label class="modal-task-labelTwo">Priority:</label>
+            <select name="priority" class="modal-task-priority-input-edit">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+            </select>
+            <label class="modal-task-labelTwo">Project:</label>
+            <select name="projects" class="modal-task-projects-input-edit">
+              <option value="Default">Default</option>
+            </select>
+            <label class="modal-task-labelTwo">Description:</label>
+            <input type="text" class="modal-task-desc-input-edit" id="modal-input">
+            <div class="modal-task-sub-cancel-div-edit">
+              <button class="modal-task-button-input-edit">Submit</button>
+              <button class="modal-task-button-input-edit">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="bg-modal-project-inactive" id="project-add-modal">
+        <div class="modal-content-project">
+          <label class="modal-project-label">Project name:</label>
+          <input class="modal-project-input">
+          <div class="modal-project-buttons">
+            <button class="modal-project-submit">Submit</button>
+            <button class="modal-project-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    </div>
+  </body>
+</html>
+
