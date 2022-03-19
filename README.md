@@ -1,10 +1,5 @@
-# TODO List
+# Todo List
 
-> ## From The Odin Project's [curriculum](https://www.theodinproject.com/courses/javascript/lessons/todo-list)
+Todo list app created with HTML, CSS and JS.
 
-> - [Live Demo](https://cluelesshint.github.io/todoList/) 
-
-## Assignment
-
-> Build the TODO List.
-
+[Live Demo](https://cluelesshint.github.io/todoList/) :point_left:
