@@ -2,7 +2,7 @@
 
 > ## From The Odin Project's [curriculum](https://www.theodinproject.com/courses/javascript/lessons/todo-list)
 
-> - [Live Demo](https://cluelesshint.github.io/todoList/) :shipit:
+> - [Live Demo](https://cluelesshint.github.io/todoList/) 
 
 ## Assignment
 
